@@ -1,6 +1,6 @@
 <?php
-$title = 'Scripto | Revision Difference | ';
-$title .= (1 == $this->namespaceIndex) ? 'Discussion' : 'Transcription';
+$title = __('Scripto | Revision Difference | ');
+$title .= (1 == $this->namespaceIndex) ? __('Discussion') : __('Transcription');
 $head = array('title' => html_escape($title));
 head($head);
 ?>
@@ -34,16 +34,16 @@ Logged in as <a href="<?php echo html_escape(uri('scripto')); ?>"><?php echo $th
  | <a href="<?php echo html_escape(uri(array('item-id' => $this->doc->getId(), 'file-id' => $this->doc->getPageId(), 'namespace-index' => $this->namespaceIndex), 'scripto_history')); ?>">View history</a>
 </p> 
 
-<h2><?php if ($this->doc->getTitle()): ?><?php echo $this->doc->getTitle(); ?><?php else: ?>Untitled Document<?php endif; ?></h2>
+<h2><?php if ($this->doc->getTitle()): ?><?php echo $this->doc->getTitle(); ?><?php else: __('Untitled Document'); ?><?php endif; ?></h2>
 <h3><?php echo $this->doc->getPageName(); ?></h3>
 
 <!-- difference -->
 <table>
     <thead>
     <tr>
-        <th colspan="2">Revision as of <?php echo date('H:i:s, M d, Y', strtotime($this->oldRevision['timestamp'])); ?><br />
+        <th colspan="2"><?php __("Revision as of"); ?> <?php echo date('H:i:s, M d, Y', strtotime($this->oldRevision['timestamp'])); ?><br />
         <?php echo ucfirst($this->oldRevision['action']); ?> by <?php echo $this->oldRevision['user']; ?></th>
-        <th colspan="2">Revision as of <?php echo date('H:i:s, M d, Y', strtotime($this->revision['timestamp'])); ?><br />
+        <th colspan="2"><?php __("Revision as of"); ?> <?php echo date('H:i:s, M d, Y', strtotime($this->revision['timestamp'])); ?><br />
         <?php echo ucfirst($this->revision['action']); ?> by <?php echo $this->revision['user']; ?></th>
     </tr>
     </thead>

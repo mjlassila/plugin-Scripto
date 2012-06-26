@@ -18,7 +18,8 @@ class ScriptoPlugin extends Omeka_Plugin_Abstract
         'config_form', 
         'config', 
         'public_append_to_items_show', 
-        'admin_append_to_items_show_primary', 
+        'admin_append_to_items_show_primary',
+        'initialize'
     );
     
     protected $_filters = array(
@@ -158,9 +159,9 @@ class ScriptoPlugin extends Omeka_Plugin_Abstract
         
         // Don't install if an element set by the name "Scripto" already exists.
         if ($db->getTable('ElementSet')->findByName(self::ELEMENT_SET_NAME)) {
-            throw new Exception('An element set by the name "' 
-            . self::ELEMENT_SET_NAME . '" already exists. You must delete that ' 
-            . 'element set to install this plugin.');
+            throw new Exception(__('An element set by the name "') 
+            . self::ELEMENT_SET_NAME . __('" already exists. You must delete that ') 
+            . __('element set to install this plugin.'));
         }
         
         $elementSetMetadata = array('name' => 'Scripto', 
@@ -168,7 +169,7 @@ class ScriptoPlugin extends Omeka_Plugin_Abstract
                                     'record_type' => 'All');
         $elements = array(
             array('name' => 'Transcription', 
-                  'description' => 'A written representation of a document.', 
+                  'description' => __('A written representation of a document.'), 
                   'record_type' => 'All')
         );
         insert_element_set($elementSetMetadata, $elements);
@@ -197,11 +198,11 @@ class ScriptoPlugin extends Omeka_Plugin_Abstract
      */
     public function hookAdminAppendToPluginUninstallMessage()
     {
-        echo '<p><strong>Warning</strong>: This will permanently delete the "' 
-           . self::ELEMENT_SET_NAME . '" element set and all transcriptions ' 
-           . 'imported from MediaWiki. You may deactivate this plugin if you do ' 
-           . 'not want to lose data. Uninstalling this plugin will not affect ' 
-           . 'your MediaWiki database in any way.</p>';
+        echo __('<p><strong>Warning</strong>: This will permanently delete the "') 
+           . self::ELEMENT_SET_NAME . _(' element set and all transcriptions ') 
+           . __('imported from MediaWiki. You may deactivate this plugin if you do ') 
+           . __('not want to lose data. Uninstalling this plugin will not affect ') 
+           . __('your MediaWiki database in any way.</p>'));
     }
     
     /**
@@ -243,7 +244,7 @@ class ScriptoPlugin extends Omeka_Plugin_Abstract
     {
         // Validate the MediaWiki API URL.
         if (!Scripto::isValidApiUrl($_POST['scripto_mediawiki_api_url'])) {
-            throw new Omeka_Validator_Exception('Invalid MediaWiki API URL');
+            throw new Omeka_Validator_Exception(__('Invalid MediaWiki API URL'));
         }
         
         // Set options that are specific to Scripto.
@@ -269,6 +270,14 @@ class ScriptoPlugin extends Omeka_Plugin_Abstract
     public function hookAdminAppendToItemsShowPrimary()
     {
         $this->_appendToItemsShow();
+    }
+    
+    /**
+     * Prepare plugin for initialization..
+     */
+    public function hookInitialize()
+    {
+        add_translation_source(dirname(__FILE__) . '/languages');
     }
     
     /**

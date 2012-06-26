@@ -1,6 +1,6 @@
 <?php
-$title = 'Scripto | Page History | ';
-$title .= (1 == $this->namespaceIndex) ? 'Discussion' : 'Transcription';
+$title = __('Scripto | Page History | ');
+$title .= (1 == $this->namespaceIndex) ? __('Discussion') : _('Transcription');
 $head = array('title' => html_escape($title));
 head($head);
 ?>
@@ -12,24 +12,24 @@ head($head);
 <!-- navigation -->
 <p>
 <?php if ($this->scripto->isLoggedIn()): ?>
-Logged in as <a href="<?php echo html_escape(uri('scripto')); ?>"><?php echo $this->scripto->getUserName(); ?></a> 
-(<a href="<?php echo html_escape(uri('scripto/logout')); ?>">logout</a>) 
- | <a href="<?php echo html_escape(uri('scripto/watchlist')); ?>">Your watchlist</a> 
+<?php __('Logged in as <a href='); ?>"<?php echo html_escape(uri('scripto')); ?>"><?php echo $this->scripto->getUserName(); ?></a> 
+(<a href="<?php echo html_escape(uri('scripto/logout')); ?>"><?php __('logout'); ?></a>) 
+ | <a href="<?php echo html_escape(uri('scripto/watchlist')); ?>"><?php __('Your watchlist'). '</a>'; ?>
 <?php else: ?>
-<a href="<?php echo html_escape(uri('scripto/login')); ?>">Log in to Scripto</a>
+<a href="<?php echo html_escape(uri('scripto/login')); ?>"><?php __('Log in to Scripto') . '</a>';?>
 <?php endif; ?>
- | <a href="<?php echo html_escape(uri('scripto/recent-changes')); ?>">Recent changes</a> 
- | <a href="<?php echo html_escape(uri(array('controller' => 'items', 'action' => 'show', 'id' => $this->doc->getId()), 'id')); ?>">View item</a>
- | <a href="<?php echo html_escape(uri(array('controller' => 'files', 'action' => 'show', 'id' => $this->doc->getPageId()), 'id')); ?>">View file</a>
- | <a href="<?php echo html_escape(uri(array('action' => 'transcribe', 'item-id' => $this->doc->getId(), 'file-id' => $this->doc->getPageId()), 'scripto_action_item_file')); ?>">Transcribe page</a>
+ | <a href="<?php echo html_escape(uri('scripto/recent-changes')); ?>"><?php __('Recent changes') .'</a>' ?> 
+ | <a href="<?php echo html_escape(uri(array('controller' => 'items', 'action' => 'show', 'id' => $this->doc->getId()), 'id')); ?>"><?php __('View item') .'</a>'; ?>
+ | <a href="<?php echo html_escape(uri(array('controller' => 'files', 'action' => 'show', 'id' => $this->doc->getPageId()), 'id')); ?>"><?php __('View file').'</a>';?>
+ | <a href="<?php echo html_escape(uri(array('action' => 'transcribe', 'item-id' => $this->doc->getId(), 'file-id' => $this->doc->getPageId()), 'scripto_action_item_file')); ?>"><?php __('Transcribe page') . '</a>';?>
 </p>
 
-<h2><?php if ($this->doc->getTitle()): ?><?php echo $this->doc->getTitle(); ?><?php else: ?>Untitled Document<?php endif; ?></h2>
+<h2><?php if ($this->doc->getTitle()): ?><?php echo $this->doc->getTitle(); ?><?php else: ?><?php __('Untitled Document'); ?><?php endif; ?></h2>
 <h3><?php echo $this->doc->getPageName(); ?></h3>
 
 <!-- page history -->
 <?php if (empty($this->history)): ?>
-<p>This page has not yet been created.</p>
+<p><?php __('This page has not yet been created.');?></p>
 <?php else: ?>
 <table>
     <thead>
