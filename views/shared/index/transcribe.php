@@ -103,7 +103,7 @@ jQuery(document).ready(function() {
     
     // Handle un/watch page.
     jQuery('#scripto-page-watch').click(function() {
-        if ('Watch page' == jQuery(this).text()) {
+        if ('<?php echo __("Watch page"); ?>' == jQuery(this).text()) {
             jQuery(this).prop('disabled', true).text('<?php echo __("Watching page..."); ?>');
             jQuery.post(
                 <?php echo js_escape(uri('scripto/index/page-action')); ?>, 
@@ -147,7 +147,7 @@ jQuery(document).ready(function() {
     
     // Handle un/protect transcription page.
     jQuery('#scripto-transcription-page-protect').click(function() {
-        if ('Protect page' == jQuery(this).text()) {
+        if ('<?php echo __("Protect page"); ?>' == jQuery(this).text()) {
             jQuery(this).prop('disabled', true).text('<?php echo __("Protecting..."); ?>');
             jQuery.post(
                 <?php echo js_escape(uri('scripto/index/page-action')); ?>, 
@@ -187,7 +187,7 @@ jQuery(document).ready(function() {
     
     // Handle un/protect talk page.
     jQuery('#scripto-talk-page-protect').click(function() {
-        if ('Protect page' == jQuery(this).text()) {
+        if ('<?php echo __("Protect page"); ?>' == jQuery(this).text()) {
             jQuery(this).prop('disabled', true).text('<?php echo __("Protecting page..."); ?>');
             jQuery.post(
                 <?php echo js_escape(uri('scripto/index/page-action')); ?>, 
