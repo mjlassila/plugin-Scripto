@@ -202,7 +202,7 @@ class ScriptoPlugin extends Omeka_Plugin_Abstract
            . self::ELEMENT_SET_NAME . _(' element set and all transcriptions ') 
            . __('imported from MediaWiki. You may deactivate this plugin if you do ') 
            . __('not want to lose data. Uninstalling this plugin will not affect ') 
-           . __('your MediaWiki database in any way.</p>'));
+           . __('your MediaWiki database in any way.</p>');
     }
     
     /**

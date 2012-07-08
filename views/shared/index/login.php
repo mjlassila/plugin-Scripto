@@ -1,5 +1,5 @@
 <?php
-$head = array('title' => html_escape('Scripto | Login'));
+$head = array('title' => html_escape(__('Scripto | Login')));
 head($head);
 ?>
 <h1><?php echo $head['title']; ?></h1>
@@ -8,27 +8,27 @@ head($head);
 
 <div id="scripto-login" class="scripto">
 <!-- navigation -->
-<p><a href="<?php echo html_escape(uri('scripto/index/recent-changes')); ?>">Recent changes</a></p>
-<p>Log in to Scripto using your MediaWiki username and password to access your 
+<p><a href="<?php echo html_escape(uri('scripto/index/recent-changes')); ?>"><?php echo __('Recent changes'); ?></a></p>
+<p><?php echo __('Log in to Scripto using your MediaWiki username and password to access your 
 account and enable certain Scripto features. Login may not be required by the 
-administrator.</p>
+administrator.'); ?></p>
 
 <!-- login -->
 <form action="<?php echo uri('scripto/index/login'); ?>" method="post">
 <div class="field">
-    <label for="scripto_mediawiki_username">Username</label>
+    <label for="scripto_mediawiki_username"><?php echo __('Username'); ?></label>
         <div class="inputs">
         <?php echo $this->formText('scripto_mediawiki_username', null, array('size' => 18)); ?>
     </div>
 </div>
 <div class="field">
-    <label for="scripto_mediawiki_password">Password</label>
+    <label for="scripto_mediawiki_password"><?php echo __('Password') ;?></label>
         <div class="inputs">
         <?php echo $this->formPassword('scripto_mediawiki_password', null, array('size' => 18)); ?>
     </div>
 </div>
 <?php echo $this->formHidden('scripto_redirect_url', $this->redirectUrl); ?>
-<?php echo $this->formSubmit('scripto_mediawiki_login', 'Login', array('style' => 'display:inline; float:none;')); ?>
+<?php echo $this->formSubmit('scripto_mediawiki_login', __('Login'), array('style' => 'display:inline; float:none;')); ?>
 </form>
 </div><!-- #scripto-login -->
 </div>

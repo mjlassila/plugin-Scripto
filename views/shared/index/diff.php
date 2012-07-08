@@ -21,17 +21,17 @@ del.diffchange {background-color: #FFBDBD;}
 <!-- navigation -->
 <p>
 <?php if ($this->scripto->isLoggedIn()): ?>
-Logged in as <a href="<?php echo html_escape(uri('scripto')); ?>"><?php echo $this->scripto->getUserName(); ?></a> 
-(<a href="<?php echo html_escape(uri('scripto/index/logout')); ?>">logout</a>) 
- | <a href="<?php echo html_escape(uri('scripto/watchlist')); ?>">Your watchlist</a> 
+<?php echo __('Logged in as '); ?><a href="<?php echo html_escape(uri('scripto')); ?>"><?php echo $this->scripto->getUserName(); ?></a> 
+(<a href="<?php echo html_escape(uri('scripto/index/logout')); ?>"><?php echo __('logout'); ?></a>) 
+ | <a href="<?php echo html_escape(uri('scripto/watchlist')); ?>"><?php echo __('Your watchlist'); ?></a> 
 <?php else: ?>
-<a href="<?php echo html_escape(uri('scripto/index/login')); ?>">Log in to Scripto</a>
+<a href="<?php echo html_escape(uri('scripto/index/login')); ?>"><?php echo __('Log in to Scripto'); ?></a>
 <?php endif; ?>
- | <a href="<?php echo html_escape(uri('scripto/recent-changes')); ?>">Recent changes</a> 
- | <a href="<?php echo html_escape(uri(array('controller' => 'items', 'action' => 'show', 'id' => $this->doc->getId()), 'id')); ?>">View item</a>
- | <a href="<?php echo html_escape(uri(array('controller' => 'files', 'action' => 'show', 'id' => $this->doc->getPageId()), 'id')); ?>">View file</a>
- | <a href="<?php echo html_escape(uri(array('action' => 'transcribe', 'item-id' => $this->doc->getId(), 'file-id' => $this->doc->getPageId()), 'scripto_action_item_file')); ?>">Transcribe page</a>
- | <a href="<?php echo html_escape(uri(array('item-id' => $this->doc->getId(), 'file-id' => $this->doc->getPageId(), 'namespace-index' => $this->namespaceIndex), 'scripto_history')); ?>">View history</a>
+ | <a href="<?php echo html_escape(uri('scripto/recent-changes')); ?>"><?php echo __('Recent changes'); ?></a> 
+ | <a href="<?php echo html_escape(uri(array('controller' => 'items', 'action' => 'show', 'id' => $this->doc->getId()), 'id')); ?>"><?php echo __('View item'); ?></a>
+ | <a href="<?php echo html_escape(uri(array('controller' => 'files', 'action' => 'show', 'id' => $this->doc->getPageId()), 'id')); ?>"><?php echo __('View file'); ?></a>
+ | <a href="<?php echo html_escape(uri(array('action' => 'transcribe', 'item-id' => $this->doc->getId(), 'file-id' => $this->doc->getPageId()), 'scripto_action_item_file')); ?>"><?php echo __('Transcribe page'); ?></a>
+ | <a href="<?php echo html_escape(uri(array('item-id' => $this->doc->getId(), 'file-id' => $this->doc->getPageId(), 'namespace-index' => $this->namespaceIndex), 'scripto_history')); ?>"><?php echo __('View history'); ?></a>
 </p> 
 
 <h2><?php if ($this->doc->getTitle()): ?><?php echo $this->doc->getTitle(); ?><?php else: __('Untitled Document'); ?><?php endif; ?></h2>
@@ -42,16 +42,16 @@ Logged in as <a href="<?php echo html_escape(uri('scripto')); ?>"><?php echo $th
     <thead>
     <tr>
         <th colspan="2"><?php __("Revision as of"); ?> <?php echo date('H:i:s, M d, Y', strtotime($this->oldRevision['timestamp'])); ?><br />
-        <?php echo ucfirst($this->oldRevision['action']); ?> by <?php echo $this->oldRevision['user']; ?></th>
+        <?php echo ucfirst($this->oldRevision['action']); ?> <?php echo __('by'); ?> <?php echo $this->oldRevision['user']; ?></th>
         <th colspan="2"><?php __("Revision as of"); ?> <?php echo date('H:i:s, M d, Y', strtotime($this->revision['timestamp'])); ?><br />
-        <?php echo ucfirst($this->revision['action']); ?> by <?php echo $this->revision['user']; ?></th>
+        <?php echo ucfirst($this->revision['action']); ?> <?php echo __('by'); ?> <?php echo $this->revision['user']; ?></th>
     </tr>
     </thead>
     <tbody>
     <?php echo $this->diff; ?>
     </tbody>
 </table>
-<h2>Revision as of <?php echo date('H:i:s, M d, Y', strtotime($this->revision['timestamp'])); ?></h2>
+<h2><?php echo __('Revision as of '); ?><?php echo date('H:i:s, M d, Y', strtotime($this->revision['timestamp'])); ?></h2>
 <div><?php echo $this->revision['html']; ?></div>
 </div><!-- #scripto-diff -->
 </div>
