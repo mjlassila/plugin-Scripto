@@ -1,0 +1,557 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-08 14:18+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: config_form.php:1
+msgid ""
+"This plugin requires you to download and install <a href=\"http://www."
+"mediawiki.org/wiki/MediaWiki\">MediaWiki</a>, \n"
+"a popular free web-based wiki software application that Scripto uses to "
+"manage \n"
+"user and transcription data. Once you have successfully installed MediaWiki, "
+"you \n"
+"can complete the following form and install the plugin.</p>\n"
+"<p>Scripto will assume files belonging to an item are in logical order, "
+"first to \n"
+"last page."
+msgstr ""
+
+#: config_form.php:8
+msgid "MediaWiki API URL"
+msgstr ""
+
+#: config_form.php:13
+msgid ""
+"URL to your <a href=\"http://www.mediawiki.org/wiki/API:"
+"Quick_start_guide#What_you_need_to_access_the_API\">MediaWiki installation "
+"API</a>."
+msgstr ""
+
+#: config_form.php:17
+msgid "Image viewer"
+msgstr ""
+
+#: config_form.php:22
+msgid "OpenLayers"
+msgstr ""
+
+#: config_form.php:23
+msgid "Zoom.it"
+msgstr ""
+
+#: config_form.php:24
+msgid "Omeka default"
+msgstr ""
+
+#: config_form.php:26
+msgid ""
+"Select an image viewer to use when transcribing \n"
+"        image files. <a href=\"http://openlayers.org/\">OpenLayers</a> and \n"
+"        <a href=\"http://zoom.it/\">Zoom.it</a> can display JPEG, PNG, GIF, "
+"and \n"
+"        BMP formats. Zoom.it can also display TIFF and ICO formats. By "
+"using \n"
+"        Zoom.it you awknowledge that you have read and agreed to the \n"
+"        <a href=\"http://zoom.it/pages/terms/\">Microsoft Zoom.it Terms of "
+"Service</a>."
+msgstr ""
+
+#: config_form.php:36
+msgid "Use Google Docs Viewer?"
+msgstr ""
+
+#: config_form.php:41
+msgid ""
+"Use Google Docs Viewer when transcribing document \n"
+"        files? Document files include PDF, DOC, PPT, XLS, TIFF, PS, and "
+"PSD \n"
+"        formats. By using this service you acknowledge that you have read "
+"and \n"
+"        agreed to the <a href=\"http://docs.google.com/viewer/TOS?hl=en"
+"\">Google \n"
+"        Docs Viewer Terms of Service</a>."
+msgstr ""
+
+#: config_form.php:49
+msgid "Import type"
+msgstr ""
+
+#: config_form.php:55
+msgid "plain text"
+msgstr ""
+
+#: config_form.php:57
+msgid ""
+"Import transcriptions as HTML or plain text? \n"
+"        Importing will copy document and page transcriptions from MediaWiki "
+"to \n"
+"        their corresponding items and files in Omeka. Choose HTML if you "
+"want to \n"
+"        preserve formatting. Choose plain text if formatting is not "
+"important."
+msgstr ""
+
+#: config_form.php:64
+msgid "Home page text"
+msgstr ""
+
+#: config_form.php:69
+msgid ""
+"Enter text that will appear on the Scripto home \n"
+"        page. Use this to display custom messages to your users, such as \n"
+"        instructions on how to use Scripto and how to register for a "
+"MediaWiki \n"
+"        account. Default text will appear if nothing is entered. You may "
+"use \n"
+"        HTML. (Wrapping &lt;p&gt;&lt;/p&gt; tags recommended.)"
+msgstr ""
+
+#: ScriptoPlugin.php:162
+msgid "An element set by the name \""
+msgstr ""
+
+#: ScriptoPlugin.php:163
+msgid "\" already exists. You must delete that "
+msgstr ""
+
+#: ScriptoPlugin.php:164
+msgid "element set to install this plugin."
+msgstr ""
+
+#: ScriptoPlugin.php:172
+msgid "A written representation of a document."
+msgstr ""
+
+#: ScriptoPlugin.php:201
+msgid "<p><strong>Warning</strong>: This will permanently delete the \""
+msgstr ""
+
+#: ScriptoPlugin.php:202
+msgid " element set and all transcriptions "
+msgstr ""
+
+#: ScriptoPlugin.php:203
+msgid "imported from MediaWiki. You may deactivate this plugin if you do "
+msgstr ""
+
+#: ScriptoPlugin.php:204
+msgid "not want to lose data. Uninstalling this plugin will not affect "
+msgstr ""
+
+#: ScriptoPlugin.php:205
+msgid "your MediaWiki database in any way.</p>"
+msgstr ""
+
+#: ScriptoPlugin.php:247
+msgid "Invalid MediaWiki API URL"
+msgstr ""
+
+#: views/shared/index/diff.php:2
+msgid "Scripto | Revision Difference | "
+msgstr ""
+
+#: views/shared/index/diff.php:3 views/shared/index/history.php:3
+#: views/shared/index/revision.php:3
+msgid "Discussion"
+msgstr ""
+
+#: views/shared/index/diff.php:3 views/shared/index/history.php:3
+#: views/shared/index/revision.php:3
+msgid "Transcription"
+msgstr ""
+
+#: views/shared/index/diff.php:24 views/shared/index/index.php:13
+#: views/shared/index/recent-changes.php:13 views/shared/index/revision.php:15
+#: views/shared/index/watchlist.php:12
+msgid "Logged in as "
+msgstr ""
+
+#: views/shared/index/diff.php:25 views/shared/index/history.php:16
+#: views/shared/index/index.php:14 views/shared/index/recent-changes.php:14
+#: views/shared/index/revision.php:16 views/shared/index/transcribe.php:268
+#: views/shared/index/watchlist.php:13
+msgid "logout"
+msgstr ""
+
+#: views/shared/index/diff.php:26 views/shared/index/history.php:17
+#: views/shared/index/index.php:15 views/shared/index/recent-changes.php:15
+#: views/shared/index/revision.php:17 views/shared/index/transcribe.php:269
+msgid "Your watchlist"
+msgstr ""
+
+#: views/shared/index/diff.php:28 views/shared/index/history.php:19
+#: views/shared/index/index.php:17 views/shared/index/recent-changes.php:17
+#: views/shared/index/revision.php:19 views/shared/index/transcribe.php:271
+msgid "Log in to Scripto"
+msgstr ""
+
+#: views/shared/index/diff.php:30 views/shared/index/history.php:21
+#: views/shared/index/index.php:19 views/shared/index/login.php:11
+#: views/shared/index/revision.php:21 views/shared/index/transcribe.php:273
+#: views/shared/index/watchlist.php:14
+msgid "Recent changes"
+msgstr ""
+
+#: views/shared/index/diff.php:31 views/shared/index/history.php:22
+#: views/shared/index/revision.php:22 views/shared/index/transcribe.php:274
+msgid "View item"
+msgstr ""
+
+#: views/shared/index/diff.php:32 views/shared/index/history.php:23
+#: views/shared/index/revision.php:23 views/shared/index/transcribe.php:275
+msgid "View file"
+msgstr ""
+
+#: views/shared/index/diff.php:33 views/shared/index/history.php:24
+#: views/shared/index/revision.php:24
+msgid "Transcribe page"
+msgstr ""
+
+#: views/shared/index/diff.php:34 views/shared/index/revision.php:25
+msgid "View history"
+msgstr ""
+
+#: views/shared/index/diff.php:37 views/shared/index/history.php:27
+#: views/shared/index/revision.php:28 views/shared/index/transcribe.php:278
+msgid "Untitled Document"
+msgstr ""
+
+#: views/shared/index/diff.php:44 views/shared/index/diff.php:46
+msgid "Revision as of"
+msgstr ""
+
+#: views/shared/index/diff.php:45 views/shared/index/diff.php:47
+#: views/shared/index/revision.php:45
+msgid "by"
+msgstr ""
+
+#: views/shared/index/diff.php:54 views/shared/index/revision.php:45
+msgid "Revision as of "
+msgstr ""
+
+#: views/shared/index/history.php:2
+msgid "Scripto | Page History | "
+msgstr ""
+
+#: views/shared/index/history.php:15
+msgid "Logged in as <a href="
+msgstr ""
+
+#: views/shared/index/history.php:32
+msgid "This page has not yet been created."
+msgstr ""
+
+#: views/shared/index/history.php:37
+msgid "Compare Changes"
+msgstr ""
+
+#: views/shared/index/history.php:38 views/shared/index/recent-changes.php:31
+#: views/shared/index/watchlist.php:27
+msgid "Changed on"
+msgstr ""
+
+#: views/shared/index/history.php:39 views/shared/index/watchlist.php:29
+msgid "Changed by"
+msgstr ""
+
+#: views/shared/index/history.php:40
+msgid "Size (bytes)"
+msgstr ""
+
+#: views/shared/index/history.php:41
+msgid "Action"
+msgstr ""
+
+#: views/shared/index/history.php:66
+msgid "current"
+msgstr ""
+
+#: views/shared/index/history.php:66
+msgid "previous"
+msgstr ""
+
+#: views/shared/index/index.php:2 views/shared/index/recent-changes.php:2
+#: views/shared/index/watchlist.php:2
+msgid "Scripto"
+msgstr ""
+
+#: views/shared/index/index.php:27
+msgid "Welcome to Scripto!"
+msgstr ""
+
+#: views/shared/index/index.php:28
+msgid ""
+"By using this plugin you are helping to transcribe items \n"
+"in"
+msgstr ""
+
+#: views/shared/index/index.php:29
+msgid ""
+"All items with files can be \n"
+"transcribed. For these purposes an item is a <em>document</em>, and an "
+"item's \n"
+"files are its <em>pages</em>. To begin transcribing documents,"
+msgstr ""
+
+#: views/shared/index/index.php:32
+msgid "browse items"
+msgstr ""
+
+#: views/shared/index/index.php:32
+msgid "or"
+msgstr ""
+
+#: views/shared/index/index.php:33
+msgid "view recent changes"
+msgstr ""
+
+#: views/shared/index/index.php:34
+msgid "to Scripto. You may "
+msgstr ""
+
+#: views/shared/index/index.php:34
+msgid "log in"
+msgstr ""
+
+#: views/shared/index/index.php:34
+msgid ""
+"to \n"
+"access your account and enable certain Scripto features. Login may not be \n"
+"required by the administrator."
+msgstr ""
+
+#: views/shared/index/index.php:39
+msgid "Your Contributions"
+msgstr ""
+
+#: views/shared/index/index.php:41
+msgid "You have no contributions."
+msgstr ""
+
+#: views/shared/index/index.php:46 views/shared/index/recent-changes.php:30
+#: views/shared/index/watchlist.php:26
+msgid "Document Page Name"
+msgstr ""
+
+#: views/shared/index/index.php:47
+msgid "Most Recent Contribution"
+msgstr ""
+
+#: views/shared/index/index.php:48 views/shared/index/recent-changes.php:34
+#: views/shared/index/watchlist.php:30
+msgid "Document Title"
+msgstr ""
+
+#: views/shared/index/index.php:68 views/shared/index/recent-changes.php:74
+#: views/shared/index/watchlist.php:59
+msgid "Untitled"
+msgstr ""
+
+#: views/shared/index/index.php:76 views/shared/index/recent-changes.php:89
+#: views/shared/index/watchlist.php:74
+msgid "Talk:"
+msgstr ""
+
+#: views/shared/index/login.php:2
+msgid "Scripto | Login"
+msgstr ""
+
+#: views/shared/index/login.php:12
+msgid ""
+"Log in to Scripto using your MediaWiki username and password to access "
+"your \n"
+"account and enable certain Scripto features. Login may not be required by "
+"the \n"
+"administrator."
+msgstr ""
+
+#: views/shared/index/login.php:19
+msgid "Username"
+msgstr ""
+
+#: views/shared/index/login.php:25
+msgid "Password"
+msgstr ""
+
+#: views/shared/index/login.php:31
+msgid "Login"
+msgstr ""
+
+#: views/shared/index/recent-changes.php:22
+msgid "Recent Changes"
+msgstr ""
+
+#: views/shared/index/recent-changes.php:24
+msgid "There are no recent changes."
+msgstr ""
+
+#: views/shared/index/recent-changes.php:29
+#: views/shared/index/watchlist.php:25
+msgid "Changes"
+msgstr ""
+
+#: views/shared/index/recent-changes.php:32
+#: views/shared/index/watchlist.php:28
+msgid "Changed"
+msgstr ""
+
+#: views/shared/index/recent-changes.php:33
+msgid "Changed By"
+msgstr ""
+
+#: views/shared/index/recent-changes.php:38
+msgid "Created"
+msgstr ""
+
+#: views/shared/index/recent-changes.php:38
+msgid "Edited"
+msgstr ""
+
+#: views/shared/index/revision.php:2
+msgid "Scripto | Page Revision | "
+msgstr ""
+
+#: views/shared/index/revision.php:35 views/shared/index/revision.php:40
+msgid "Revert to this revision"
+msgstr ""
+
+#: views/shared/index/transcribe.php:2
+msgid "Scripto | Transcribe Page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:12
+msgid "Editing transcription..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:23
+msgid "Edit transcription."
+msgstr ""
+
+#: views/shared/index/transcribe.php:31
+msgid "Editing discussion..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:42 views/shared/index/transcribe.php:323
+msgid "Edit discussion"
+msgstr ""
+
+#: views/shared/index/transcribe.php:107
+msgid "Watching page..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:117
+msgid "Unwatch page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:121
+msgid "Unwatching page..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:131
+msgid "Watch page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:143 views/shared/index/transcribe.php:161
+#: views/shared/index/transcribe.php:183 views/shared/index/transcribe.php:201
+msgid "Unprotect page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:145 views/shared/index/transcribe.php:175
+#: views/shared/index/transcribe.php:185 views/shared/index/transcribe.php:215
+msgid "Protect page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:151
+msgid "Protecting..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:165 views/shared/index/transcribe.php:205
+msgid "Unprotecting page..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:191
+msgid "Protecting page..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:225
+msgid "Importing page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:235 views/shared/index/transcribe.php:312
+msgid "Import page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:241
+msgid "Importing document..."
+msgstr ""
+
+#: views/shared/index/transcribe.php:251
+msgid "Import document"
+msgstr ""
+
+#: views/shared/index/transcribe.php:287
+msgid "previous page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:288
+msgid "next page"
+msgstr ""
+
+#: views/shared/index/transcribe.php:298
+msgid "Edit transcription"
+msgstr ""
+
+#: views/shared/index/transcribe.php:300 views/shared/index/transcribe.php:325
+msgid "wiki formatting help"
+msgstr ""
+
+#: views/shared/index/transcribe.php:303
+msgid "You don't have permission to transcribe this page."
+msgstr ""
+
+#: views/shared/index/transcribe.php:305
+msgid "Current Page Transcription"
+msgstr ""
+
+#: views/shared/index/transcribe.php:306 views/shared/index/transcribe.php:331
+msgid "edit"
+msgstr ""
+
+#: views/shared/index/transcribe.php:307 views/shared/index/transcribe.php:332
+msgid "wiki"
+msgstr ""
+
+#: views/shared/index/transcribe.php:308 views/shared/index/transcribe.php:333
+msgid "history"
+msgstr ""
+
+#: views/shared/index/transcribe.php:328
+msgid "You don't have permission to discuss this page."
+msgstr ""
+
+#: views/shared/index/transcribe.php:330
+msgid "Current Page Discussion"
+msgstr ""
+
+#: views/shared/index/watchlist.php:18
+msgid "Your Watchlist"
+msgstr ""
+
+#: views/shared/index/watchlist.php:20
+msgid "There are no document pages in your watchlist."
+msgstr ""
