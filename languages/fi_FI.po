@@ -33,7 +33,7 @@ msgstr ""
 
 #: config_form.php:8
 msgid "MediaWiki API URL"
-msgstr ""
+msgstr "MediaWiki API URL"
 
 #: config_form.php:13
 msgid ""
@@ -41,22 +41,24 @@ msgid ""
 "Quick_start_guide#What_you_need_to_access_the_API\">MediaWiki installation "
 "API</a>."
 msgstr ""
+"<a href=\"http://www.mediawiki.org/wiki/API:"
+"Quick_start_guide#What_you_need_to_access_the_API\">MediaWikin rajapinnan</a> URL-osoite. "
 
 #: config_form.php:17
 msgid "Image viewer"
-msgstr ""
+msgstr "Kuvan"
 
 #: config_form.php:22
 msgid "OpenLayers"
-msgstr ""
+msgstr "OpenLayers"
 
 #: config_form.php:23
 msgid "Zoom.it"
-msgstr ""
+msgstr "Zoom.it"
 
 #: config_form.php:24
 msgid "Omeka default"
-msgstr ""
+msgstr "Omekan oletus"
 
 #: config_form.php:26
 msgid ""
@@ -73,7 +75,7 @@ msgstr ""
 
 #: config_form.php:36
 msgid "Use Google Docs Viewer?"
-msgstr ""
+msgstr "Käytä Google Docs"
 
 #: config_form.php:41
 msgid ""
@@ -89,11 +91,11 @@ msgstr ""
 
 #: config_form.php:49
 msgid "Import type"
-msgstr ""
+msgstr "Tuontiformaatti"
 
 #: config_form.php:55
 msgid "plain text"
-msgstr ""
+msgstr "teksti"
 
 #: config_form.php:57
 msgid ""
@@ -159,81 +161,81 @@ msgstr ""
 
 #: ScriptoPlugin.php:247
 msgid "Invalid MediaWiki API URL"
-msgstr ""
+msgstr "Virheellinen MediaWiki API:n URL"
 
 #: views/shared/index/diff.php:2
 msgid "Scripto | Revision Difference | "
-msgstr ""
+msgstr "Scripto | Versioiden erot |"
 
 #: views/shared/index/diff.php:3 views/shared/index/history.php:3
 #: views/shared/index/revision.php:3
 msgid "Discussion"
-msgstr ""
+msgstr "Keskustelu"
 
 #: views/shared/index/diff.php:3 views/shared/index/history.php:3
 #: views/shared/index/revision.php:3
 msgid "Transcription"
-msgstr ""
+msgstr "Transcripti"
 
 #: views/shared/index/diff.php:24 views/shared/index/index.php:13
 #: views/shared/index/recent-changes.php:13 views/shared/index/revision.php:15
 #: views/shared/index/watchlist.php:12
 msgid "Logged in as "
-msgstr ""
+msgstr "Kirjautunut käyttäjänä "
 
 #: views/shared/index/diff.php:25 views/shared/index/history.php:16
 #: views/shared/index/index.php:14 views/shared/index/recent-changes.php:14
 #: views/shared/index/revision.php:16 views/shared/index/transcribe.php:268
 #: views/shared/index/watchlist.php:13
 msgid "logout"
-msgstr ""
+msgstr "kirjaudu ulos"
 
 #: views/shared/index/diff.php:26 views/shared/index/history.php:17
 #: views/shared/index/index.php:15 views/shared/index/recent-changes.php:15
 #: views/shared/index/revision.php:17 views/shared/index/transcribe.php:269
 msgid "Your watchlist"
-msgstr ""
+msgstr "Seurantalista"
 
 #: views/shared/index/diff.php:28 views/shared/index/history.php:19
 #: views/shared/index/index.php:17 views/shared/index/recent-changes.php:17
 #: views/shared/index/revision.php:19 views/shared/index/transcribe.php:271
 msgid "Log in to Scripto"
-msgstr ""
+msgstr "Kirjaudu Scriptoon"
 
 #: views/shared/index/diff.php:30 views/shared/index/history.php:21
 #: views/shared/index/index.php:19 views/shared/index/login.php:11
 #: views/shared/index/revision.php:21 views/shared/index/transcribe.php:273
 #: views/shared/index/watchlist.php:14
 msgid "Recent changes"
-msgstr ""
+msgstr "Tuoreet muutokset"
 
 #: views/shared/index/diff.php:31 views/shared/index/history.php:22
 #: views/shared/index/revision.php:22 views/shared/index/transcribe.php:274
 msgid "View item"
-msgstr ""
+msgstr "Näytä teos"
 
 #: views/shared/index/diff.php:32 views/shared/index/history.php:23
 #: views/shared/index/revision.php:23 views/shared/index/transcribe.php:275
 msgid "View file"
-msgstr ""
+msgstr "Näytä tiedosto"
 
 #: views/shared/index/diff.php:33 views/shared/index/history.php:24
 #: views/shared/index/revision.php:24
 msgid "Transcribe page"
-msgstr ""
+msgstr "Transkripoi sivu"
 
 #: views/shared/index/diff.php:34 views/shared/index/revision.php:25
 msgid "View history"
-msgstr ""
+msgstr "Näytä historia"
 
 #: views/shared/index/diff.php:37 views/shared/index/history.php:27
 #: views/shared/index/revision.php:28 views/shared/index/transcribe.php:278
 msgid "Untitled Document"
-msgstr ""
+msgstr "Nimeämätön"
 
 #: views/shared/index/diff.php:44 views/shared/index/diff.php:46
 msgid "Revision as of"
-msgstr ""
+msgstr "Version ajankohta"
 
 #: views/shared/index/diff.php:45 views/shared/index/diff.php:47
 #: views/shared/index/revision.php:45
@@ -242,57 +244,57 @@ msgstr ""
 
 #: views/shared/index/diff.php:54 views/shared/index/revision.php:45
 msgid "Revision as of "
-msgstr ""
+msgstr "Version ajankohta"
 
 #: views/shared/index/history.php:2
 msgid "Scripto | Page History | "
-msgstr ""
+msgstr "Scripto | Muutoshistoria | "
 
 #: views/shared/index/history.php:15
 msgid "Logged in as <a href="
-msgstr ""
+msgstr "Kirjautunut käyttäjänä <a href="
 
 #: views/shared/index/history.php:32
 msgid "This page has not yet been created."
-msgstr ""
+msgstr "Sivua ei ole vielä luotu"
 
 #: views/shared/index/history.php:37
 msgid "Compare Changes"
-msgstr ""
+msgstr "Vertaa muutoksia"
 
 #: views/shared/index/history.php:38 views/shared/index/recent-changes.php:31
 #: views/shared/index/watchlist.php:27
 msgid "Changed on"
-msgstr ""
+msgstr "Muutospäivä"
 
 #: views/shared/index/history.php:39 views/shared/index/watchlist.php:29
 msgid "Changed by"
-msgstr ""
+msgstr "Muokkaaja"
 
 #: views/shared/index/history.php:40
 msgid "Size (bytes)"
-msgstr ""
+msgstr "Koko (tavua)"
 
 #: views/shared/index/history.php:41
 msgid "Action"
-msgstr ""
+msgstr "Toimenpide"
 
 #: views/shared/index/history.php:66
 msgid "current"
-msgstr ""
+msgstr "nykyinen"
 
 #: views/shared/index/history.php:66
 msgid "previous"
-msgstr ""
+msgstr "edellinen"
 
 #: views/shared/index/index.php:2 views/shared/index/recent-changes.php:2
 #: views/shared/index/watchlist.php:2
 msgid "Scripto"
-msgstr ""
+msgstr "Scripto"
 
 #: views/shared/index/index.php:27
 msgid "Welcome to Scripto!"
-msgstr ""
+msgstr "Tervetuloa Scriptoon!"
 
 #: views/shared/index/index.php:28
 msgid ""
@@ -310,23 +312,23 @@ msgstr ""
 
 #: views/shared/index/index.php:32
 msgid "browse items"
-msgstr ""
+msgstr "selaa teoksia"
 
 #: views/shared/index/index.php:32
 msgid "or"
-msgstr ""
+msgstr "tai"
 
 #: views/shared/index/index.php:33
 msgid "view recent changes"
-msgstr ""
+msgstr "näytä tuoreimmat muutokset"
 
 #: views/shared/index/index.php:34
 msgid "to Scripto. You may "
-msgstr ""
+msgstr "Scriptoon. Voit "
 
 #: views/shared/index/index.php:34
 msgid "log in"
-msgstr ""
+msgstr "kirjautua sisään"
 
 #: views/shared/index/index.php:34
 msgid ""
@@ -337,39 +339,39 @@ msgstr ""
 
 #: views/shared/index/index.php:39
 msgid "Your Contributions"
-msgstr ""
+msgstr "Omat muokkaukset"
 
 #: views/shared/index/index.php:41
 msgid "You have no contributions."
-msgstr ""
+msgstr "Et ole muokannut tai transcripoinut dokumentteja."
 
 #: views/shared/index/index.php:46 views/shared/index/recent-changes.php:30
 #: views/shared/index/watchlist.php:26
 msgid "Document Page Name"
-msgstr ""
+msgstr "Otsikko"
 
 #: views/shared/index/index.php:47
 msgid "Most Recent Contribution"
-msgstr ""
+msgstr "Tuoreimmat muutokset"
 
 #: views/shared/index/index.php:48 views/shared/index/recent-changes.php:34
 #: views/shared/index/watchlist.php:30
 msgid "Document Title"
-msgstr ""
+msgstr "Otsikko"
 
 #: views/shared/index/index.php:68 views/shared/index/recent-changes.php:74
 #: views/shared/index/watchlist.php:59
 msgid "Untitled"
-msgstr ""
+msgstr "Nimeämätön"
 
 #: views/shared/index/index.php:76 views/shared/index/recent-changes.php:89
 #: views/shared/index/watchlist.php:74
 msgid "Talk:"
-msgstr ""
+msgstr "Keskustelu:"
 
 #: views/shared/index/login.php:2
 msgid "Scripto | Login"
-msgstr ""
+msgstr "Scripto | Kirjaudu"
 
 #: views/shared/index/login.php:12
 msgid ""
@@ -382,176 +384,176 @@ msgstr ""
 
 #: views/shared/index/login.php:19
 msgid "Username"
-msgstr ""
+msgstr "Käyttäjänimi"
 
 #: views/shared/index/login.php:25
 msgid "Password"
-msgstr ""
+msgstr "Salasana"
 
 #: views/shared/index/login.php:31
 msgid "Login"
-msgstr ""
+msgstr "Kirjaudu"
 
 #: views/shared/index/recent-changes.php:22
 msgid "Recent Changes"
-msgstr ""
+msgstr "Tuoreimmat muutokset"
 
 #: views/shared/index/recent-changes.php:24
 msgid "There are no recent changes."
-msgstr ""
+msgstr "Ei tuoreita muutoksia."
 
 #: views/shared/index/recent-changes.php:29
 #: views/shared/index/watchlist.php:25
 msgid "Changes"
-msgstr ""
+msgstr "Muokkaukset"
 
 #: views/shared/index/recent-changes.php:32
 #: views/shared/index/watchlist.php:28
 msgid "Changed"
-msgstr ""
+msgstr "Rivimuutos"
 
 #: views/shared/index/recent-changes.php:33
 msgid "Changed By"
-msgstr ""
+msgstr "Muokkaaja"
 
 #: views/shared/index/recent-changes.php:38
 msgid "Created"
-msgstr ""
+msgstr "Luonti"
 
 #: views/shared/index/recent-changes.php:38
 msgid "Edited"
-msgstr ""
+msgstr "Muokkaus"
 
 #: views/shared/index/revision.php:2
 msgid "Scripto | Page Revision | "
-msgstr ""
+msgstr "Scripto | Sivun versio | "
 
 #: views/shared/index/revision.php:35 views/shared/index/revision.php:40
 msgid "Revert to this revision"
-msgstr ""
+msgstr "Palaa tähän versioon"
 
 #: views/shared/index/transcribe.php:2
 msgid "Scripto | Transcribe Page"
-msgstr ""
+msgstr "Scripto | Transkriboi sivu"
 
 #: views/shared/index/transcribe.php:12
 msgid "Editing transcription..."
-msgstr ""
+msgstr "Muokataan transkriptiä..."
 
 #: views/shared/index/transcribe.php:23
 msgid "Edit transcription."
-msgstr ""
+msgstr "Muokkaa transkriptiä."
 
 #: views/shared/index/transcribe.php:31
 msgid "Editing discussion..."
-msgstr ""
+msgstr "Muokataan keskustelua..."
 
 #: views/shared/index/transcribe.php:42 views/shared/index/transcribe.php:323
 msgid "Edit discussion"
-msgstr ""
+msgstr "Muokkaa keskustelua"
 
 #: views/shared/index/transcribe.php:107
 msgid "Watching page..."
-msgstr ""
+msgstr "Tarkkaillaan sivua..."
 
 #: views/shared/index/transcribe.php:117
 msgid "Unwatch page"
-msgstr ""
+msgstr "Lopeta sivun tarkkailu"
 
 #: views/shared/index/transcribe.php:121
 msgid "Unwatching page..."
-msgstr ""
+msgstr "Lopetetaan sivun tarkkailua..."
 
 #: views/shared/index/transcribe.php:131
 msgid "Watch page"
-msgstr ""
+msgstr "Tarkkaile sivua"
 
 #: views/shared/index/transcribe.php:143 views/shared/index/transcribe.php:161
 #: views/shared/index/transcribe.php:183 views/shared/index/transcribe.php:201
 msgid "Unprotect page"
-msgstr ""
+msgstr "Poista sivun suojaus"
 
 #: views/shared/index/transcribe.php:145 views/shared/index/transcribe.php:175
 #: views/shared/index/transcribe.php:185 views/shared/index/transcribe.php:215
 msgid "Protect page"
-msgstr ""
+msgstr "Suojaa sivu"
 
 #: views/shared/index/transcribe.php:151
 msgid "Protecting..."
-msgstr ""
+msgstr "Suojataan..."
 
 #: views/shared/index/transcribe.php:165 views/shared/index/transcribe.php:205
 msgid "Unprotecting page..."
-msgstr ""
+msgstr "Poistetaan sivun suojausta..."
 
 #: views/shared/index/transcribe.php:191
 msgid "Protecting page..."
-msgstr ""
+msgstr "Suojataan sivua..."
 
 #: views/shared/index/transcribe.php:225
 msgid "Importing page"
-msgstr ""
+msgstr "Tuodaan sivua"
 
 #: views/shared/index/transcribe.php:235 views/shared/index/transcribe.php:312
 msgid "Import page"
-msgstr ""
+msgstr "Tuo sivu"
 
 #: views/shared/index/transcribe.php:241
 msgid "Importing document..."
-msgstr ""
+msgstr "Tuodaan dokumenttia..."
 
 #: views/shared/index/transcribe.php:251
 msgid "Import document"
-msgstr ""
+msgstr "Tuo dokumentti"
 
 #: views/shared/index/transcribe.php:287
 msgid "previous page"
-msgstr ""
+msgstr "edellinen sivu"
 
 #: views/shared/index/transcribe.php:288
 msgid "next page"
-msgstr ""
+msgstr "seuraava sivu"
 
 #: views/shared/index/transcribe.php:298
 msgid "Edit transcription"
-msgstr ""
+msgstr "Muokkaa transcriptiä"
 
 #: views/shared/index/transcribe.php:300 views/shared/index/transcribe.php:325
 msgid "wiki formatting help"
-msgstr ""
+msgstr "wiki-muotoilun ohje"
 
 #: views/shared/index/transcribe.php:303
 msgid "You don't have permission to transcribe this page."
-msgstr ""
+msgstr "Sivulla ei ole riittäviä käyttöoikeuksia sivun transkribointia varten."
 
 #: views/shared/index/transcribe.php:305
 msgid "Current Page Transcription"
-msgstr ""
+msgstr "Nykyinen sivun transcripti"
 
 #: views/shared/index/transcribe.php:306 views/shared/index/transcribe.php:331
 msgid "edit"
-msgstr ""
+msgstr "muokkaa"
 
 #: views/shared/index/transcribe.php:307 views/shared/index/transcribe.php:332
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #: views/shared/index/transcribe.php:308 views/shared/index/transcribe.php:333
 msgid "history"
-msgstr ""
+msgstr "historia"
 
 #: views/shared/index/transcribe.php:328
 msgid "You don't have permission to discuss this page."
-msgstr ""
+msgstr "Sivulla ei ole käyttäjäoikeutta osallistua sivun keskusteluun."
 
 #: views/shared/index/transcribe.php:330
 msgid "Current Page Discussion"
-msgstr ""
+msgstr "Nykyinen keskustelu"
 
 #: views/shared/index/watchlist.php:18
 msgid "Your Watchlist"
-msgstr ""
+msgstr "Seurantalista"
 
 #: views/shared/index/watchlist.php:20
 msgid "There are no document pages in your watchlist."
-msgstr ""
+msgstr "Seurantalistallasi ei ole sivuja."
